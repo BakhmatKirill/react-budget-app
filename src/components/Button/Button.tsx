@@ -1,5 +1,9 @@
-import React from "react";
+import { StyledButton } from "./styles";
 
-export const Button = () => {
-  return <div>Button</div>;
+interface IButton {
+  children: string;
+}
+
+export const Button = ({ children }: IButton) => {
+  return <StyledButton>{children}</StyledButton>;
 };
