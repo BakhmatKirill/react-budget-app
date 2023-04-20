@@ -11,7 +11,7 @@ The user can:
 - edit budget;
 - search expenses.
 
-[Website](https://bakhmatkirill.github.io/react-budget-app/)
+[Website](https://BakhmatKirill.github.io/react-budget-app/)
 
 ## Preview
 
