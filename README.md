@@ -33,4 +33,4 @@ The user can:
 
 ## Author
 
-[Kirill BAkhmat](https://github.com/BakhmatKirill)
+[Kirill Bakhmat](https://github.com/BakhmatKirill)

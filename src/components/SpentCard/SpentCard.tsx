@@ -1,5 +1,20 @@
-import React from "react";
+import { useCurrencyContex } from "../../context/CurrencyContext/CurrencyContext";
+import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
+import { StyledSpentCard, Title } from "./styles";
 
-export const SpentCard = () => {
-  return <div>SpentCard</div>;
+const SpentCard = () => {
+  const { currency } = useCurrencyContex();
+  const { expenses } = useExpensesContext();
+
+  const spent = expenses.reduce((sum, { cost }) => sum + cost, 0);
+  return (
+    <StyledSpentCard>
+      <Title>
+        Spent so far: {currency}
+        {spent}
+      </Title>
+    </StyledSpentCard>
+  );
 };
+
+export default SpentCard;

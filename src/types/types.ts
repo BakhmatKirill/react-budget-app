@@ -1,6 +1,6 @@
 import { Currency } from "../config/Currency";
 
-export interface IOption {
+export interface Option {
   value: Currency;
   label: string;
 }

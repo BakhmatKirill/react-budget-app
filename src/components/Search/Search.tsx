@@ -1,5 +1,13 @@
-import React from "react";
+import { ChangeEvent } from "react";
+import { StyledSearch } from "./styles";
 
-export const Search = () => {
-  return <div>Search</div>;
+interface ISearch {
+  handleSearch: (e: ChangeEvent<HTMLInputElement>) => void;
+  searchValue: String;
+}
+
+const Search = ({ handleSearch }: ISearch) => {
+  return <StyledSearch placeholder="Search ..." onChange={handleSearch} />;
 };
+
+export default Search;
