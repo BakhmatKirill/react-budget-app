@@ -1,5 +1,10 @@
-import React from "react";
+import close from "../../assets/icons/close.svg";
+import { StyledClose } from "./styles";
 
-export const Close = () => {
-  return <div>Close</div>;
+interface IClose {
+  onClick: () => void;
+}
+
+export const Close = ({ onClick }: IClose) => {
+  return <StyledClose src={close} alt="Delete" onClick={onClick} />;
 };

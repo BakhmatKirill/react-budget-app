@@ -5,12 +5,12 @@ export interface ExpenseContextProviderProps {
 }
 
 export interface ExpenseContextState {
-  expenses: Expenses[];
-  addExpense: (newExpenses: Expenses[]) => void;
+  expenses: IExpenses[];
+  addExpense: (newExpenses: IExpenses[]) => void;
   deleteExpense: (id: string) => void;
 }
 
-export interface Expenses {
+export interface IExpenses {
   id: string;
   name: string;
   cost: number;

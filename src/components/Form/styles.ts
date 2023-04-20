@@ -7,6 +7,7 @@ export const StyledForm = styled.form`
 `;
 
 export const Input = styled.input`
+  outline: none;
   padding: 16px 0 16px 20px;
   font-weight: 400;
   font-size: 16px;

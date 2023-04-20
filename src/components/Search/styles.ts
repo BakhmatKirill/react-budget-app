@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSearch = styled.input`
+  outline: none;
   padding: 15px 0 15px 20px;
   width: 100%;
   font-weight: 400;

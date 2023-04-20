@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
 import { createContext, useContext, useState } from "react";
-import { Expenses, ExpenseContextState, ExpenseContextProviderProps } from "./types";
+import { IExpenses, ExpenseContextState, ExpenseContextProviderProps } from "./types";
 
 export const ExpenseContext = createContext<ExpenseContextState>({
   expenses: [],
-  addExpense: (expenses: Expenses[]) => {},
+  addExpense: (expenses: IExpenses[]) => {},
   deleteExpense: () => {},
 });
 
@@ -16,7 +16,7 @@ const useExpensesContextValue = () => {
       { id: uuidv4(), name: "relax", cost: 500 },
       { id: uuidv4(), name: "study", cost: 400 },
     ],
-    addExpense: (expenses: Expenses[]) => {
+    addExpense: (expenses: IExpenses[]) => {
       setExpensesValue((ctx) => ({ ...ctx, expenses: expenses }));
     },
     deleteExpense: (id: string) => {

@@ -7,7 +7,7 @@ interface ISearch {
 }
 
 const Search = ({ handleSearch }: ISearch) => {
-  return <StyledSearch placeholder="Search ..." onChange={handleSearch} />;
+  return <StyledSearch placeholder="search..." onChange={handleSearch} />;
 };
 
 export default Search;

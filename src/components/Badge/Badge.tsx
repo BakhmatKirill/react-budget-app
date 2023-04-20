@@ -1,5 +1,11 @@
-import React from "react";
+import { useCurrencyContex } from "../../context/CurrencyContext/CurrencyContext";
+import { StyledBadge } from "./styles";
 
-export const Badge = () => {
-  return <div>Badge</div>;
+interface IBadge {
+  cost: number;
+}
+
+export const Badge = ({ cost }: IBadge) => {
+  const { currency } = useCurrencyContex();
+  return <StyledBadge>{`${currency}${cost}`}</StyledBadge>;
 };
