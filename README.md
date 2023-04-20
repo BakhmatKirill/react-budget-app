@@ -27,6 +27,7 @@ The user can:
 - Styled Components
 - React-hook-form
 - React Select
+- Hooks
 - Uuid
 - gh-pages
 - mobile app version
